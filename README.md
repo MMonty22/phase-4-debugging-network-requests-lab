@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: attempted to add a toy, saw the 500 internal server error, traced the error in the rails log and fixed the typo.
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: attempted to like a toy, saw the unexpected end of JSON syntax error in the browser console and simply added render json: toy to the update controller action
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: attempted to donate the toy, saw the 404 not found error in the browser console, checked the network tab and rails server logs that showed no route matched and added the route
